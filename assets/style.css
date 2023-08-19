@@ -1,0 +1,247 @@
+/* CSS Variables */
+:root {
+    --primary-color: #7A316F;
+    --bg-color: #461959;
+    --bg-botton: #CD6688;
+    --text-color: #F5FFC9;
+    --border-radius: 0.8em;
+    --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Inter';
+}
+
+/*Dando estilos a la barra de desplazamiento*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+    transition: var(--transition);
+}
+
+.cuerpo {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 60%;
+}
+
+.logoAlura {
+    margin-top: 40px;
+    margin-left: 40px;
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+/* Main */
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.contenedor-botones {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.codificar{
+    background: var(--bg-botton);
+    border: none;
+    color: var(--text-color);
+}
+
+.codificar:hover{
+    background: #8BE8E5;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.decodificar{
+    background: #828283;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.decodificar:hover{
+    background: #8BE8E5;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.botones-extra {
+    text-align: center;
+}
+
+.reiniciar{
+    background: #FFFFFF;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    margin-top: 20px;
+}
+
+.reiniciar:hover{
+    background: var(--primary-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.pegar{
+    background: #FFFFFF;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.pegar:hover{
+    background: var(--primary-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+/* Codificador */
+.codificador {
+    width: 70%;
+}
+
+.texto-ingresado {
+    background: var(--primary-color);
+    width: 680px;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 240px;
+    border-radius: 20px;
+    border: solid 1px var(--text-color);
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 35px;
+    color: var(--bg-botton);
+}
+
+.aviso {
+    margin-left: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: #8BE8E5;
+}
+
+/* Decodificador */
+.decodificador {
+    background: var(--bg-botton);
+    width: 400px;
+    border-radius: 32px;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.texto-copiado {
+    background-color: var(--bg-botton);
+    margin-top: 32px;
+    width: 90%;
+    height: 587px;
+    font-family: 'Inter';
+    font-size: 24px;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.copiar {
+    margin: auto;
+    background: #828283;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: auto;
+    padding-top: 160px;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}
+
+.contenedor-texto {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.h2Titulo {
+    width: 100%;
+    height: 20%;
+    font-size: 24px;
+    color: #8BE8E5;
+}
+
+.pBajada {
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    color: #8BE8E5;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #8BE8E5;
+    font-size: 12px;
+}
+
+footer a {
+    color: var(--bg-botton);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.ocultar{
+    display: none;
+}
+
+
